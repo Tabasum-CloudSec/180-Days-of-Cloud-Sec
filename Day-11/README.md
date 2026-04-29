@@ -62,4 +62,3 @@ The gold standard for **Data Centers**:
 
 ---
 *Created by [@tabasum.sec](https://www.instagram.com/tabasum.sec)*
-```
