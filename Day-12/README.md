@@ -1,29 +1,46 @@
-🌐 Day 12: Mastering Wide Area Networks (WAN)
-Today's focus was shifting from local connectivity (LAN) to the technologies that connect geographically dispersed sites.
+# 🌐 CCNA 200-301 | Day 12: WAN Fundamentals
 
-1. Architectural Components
-In a WAN environment, the responsibility is split between the customer and the Service Provider (SP).
+## 📌 Overview
+Shifting focus from **LAN (Local Area Network)** to **WAN (Wide Area Network)**. While LANs operate within a single geographical location under private ownership, WANs connect dispersed LANs across cities or countries via Service Providers.
 
-Term	Definition	Key Component
-CPE	Customer Premises Equipment	Routers, Switches, or Modems at the user site.
-Demarc	Demarcation Point	The physical interface where ISP responsibility ends.
-CO	Central Office	The ISP facility where local loops terminate.
-2. WAN Connectivity Options
-I explored the "Menu" of WAN technologies mentioned in the Cisco 200-301 objectives:
+---
 
-Dedicated Leased Lines: Point-to-point private links (e.g., T1/E1). Secure but high cost.
+## 🛠️ WAN Architecture & Terminology
+Understanding the physical and logical boundaries between the Customer and the ISP.
 
-Metro Ethernet (MetroE): Extending Ethernet protocols over the WAN. Highly scalable and familiar.
-
-MPLS (Multiprotocol Label Switching): A high-performance telecommunications network that directs data from one network node to the next based on short path labels rather than long network addresses.
-
-Internet VPN: Utilizing public infrastructure with IPsec tunnels for cost-effective security.
+| Term | Full Name | Definition & Responsibility |
+| :--- | :--- | :--- |
+| **CPE** | **Customer Premises Equipment** | Hardware located at the subscriber's site (Routers, WAPs). **[User Owned]** |
+| **Demarc** | **Demarcation Point** | The physical point where ISP responsibility ends and CPE begins. |
+| **CO** | **Central Office** | The ISP facility where the local loop connects to the provider's switching center. |
 
 
-Shutterstock
-3. Key Takeaways for the Exam
-WANs operate at Physical (Layer 1) and Data Link (Layer 2).
 
-Modern WANs are moving toward SD-WAN for centralized, software-defined control.
+---
 
-MPLS is often referred to as a Layer 2.5 protocol because it sits between the Data Link and Network layers.
+## 🏗️ Modern WAN Connectivity Menu
+A breakdown of how modern enterprises bridge the gap between branches.
+
+### **1. Dedicated Leased Lines**
+* **Protocol:** T1/E1, T3/E3.
+* **Pros:** Point-to-point, 100% private, guaranteed bandwidth.
+* **Cons:** Extremely expensive, difficult to scale.
+
+### **2. Metro Ethernet (MetroE)**
+* **Nature:** Extending Layer 2 Ethernet over the WAN.
+* **Pros:** High speed (up to 100Gbps), familiar Ethernet protocols, cost-effective.
+* **Best Use:** Connecting offices within a metropolitan area.
+
+### **3. MPLS (Multiprotocol Label Switching)**
+* **Layer:** Often called **"Layer 2.5"**.
+* **Mechanism:** Forwards data based on **Labels** rather than IP addresses.
+* **Architecture:** Supports Any-to-Any connectivity (Full Mesh).
+
+---
+
+## 🔐 Public WAN (The Internet)
+Using the Public Internet as a cost-effective WAN solution requires encryption to maintain security.
+
+* **Site-to-Site VPN:** Creates a secure "Tunnel" across the public internet.
+* **Encapsulation:** Uses **IPsec** to encrypt data packets.
+* **Trade-off:** Lower cost but **No Quality of Service (QoS)** guarantees.
