@@ -1,6 +1,4 @@
-Here is the complete, professional Markdown code for your **Day 14** GitHub update. You can copy the entire block below and paste it directly into your `README.md` or a new file.
-
-🐧 100 Days of Linux — Day 14
+#🐧 100 Days of Linux — Day 14
 
 🎯 Topic: Mastering the `uniq` Command
 
