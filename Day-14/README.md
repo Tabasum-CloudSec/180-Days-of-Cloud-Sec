@@ -1,4 +1,4 @@
-#🐧 100 Days of Linux — Day 14
+###🐧 100 Days of Linux — Day 14
 
 🎯 Topic: Mastering the `uniq` Command
 
@@ -17,7 +17,6 @@ sort file.txt | uniq
 
 
 
----
 
 ### 🛠️ Common Flags & Options
 
