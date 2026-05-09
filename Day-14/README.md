@@ -1,24 +1,23 @@
 Here is the complete, professional Markdown code for your **Day 14** GitHub update. You can copy the entire block below and paste it directly into your `README.md` or a new file.
 
-```markdown
-# 🐧 100 Days of Linux — Day 14
+🐧 100 Days of Linux — Day 14
 
-## 🎯 Topic: Mastering the `uniq` Command
+🎯 Topic: Mastering the `uniq` Command
 
 Today, I learned how to handle duplicate data using the `uniq` command. It is one of the most powerful tools for text processing, but it has a specific logic that every Linux user must master.
 
----
 
-### 🔍 How `uniq` Works
+
+🔍 How `uniq` Works
 The `uniq` command filters out repeated lines from a file. However, it **only detects adjacent duplicate lines**. 
 
 > **Important:** If your duplicates are scattered throughout the file, `uniq` won't see them. To fix this, you must always **sort** your data first.
 
-#### The "Golden Pipeline":
-```bash
+The "Golden Pipeline":
+bash
 sort file.txt | uniq
 
-```
+
 
 ---
 
